@@ -1,4 +1,4 @@
-import Alert from "./components/Alert";
+import Button from "./components/Button";
 
 function App() {
   // let items = ["New York", "Miami", "Chicago", "Los Angeles", "Houston"];
@@ -8,9 +8,12 @@ function App() {
 
   return (
     <>
-      <Alert>
+      <Button buttonText="Button Text String" />
+
+      {/* <Alert>
         <h1>Alert</h1>
-      </Alert>
+      </Alert> */}
+
       {/* <ListGroup
         items={items}
         heading="Cities"
