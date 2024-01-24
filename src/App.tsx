@@ -6,9 +6,13 @@ function App() {
   //   console.log(item);
   // };
 
+  const handleButtonClick = () => {
+    console.log("Button clicked!");
+  };
+
   return (
     <>
-      <Button>Button Text</Button>
+      <Button onButtonClick={handleButtonClick}>Button Text</Button>
 
       {/* <Alert>
         <h1>Alert</h1>
