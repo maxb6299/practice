@@ -1,12 +1,12 @@
 interface Props {
-  buttonText: string;
+  children: string;
 }
 
-const Button = ({ buttonText }: Props) => {
+const Button = ({ children }: Props) => {
   return (
     <>
       <button type="button" className="btn btn-primary ">
-        {buttonText}
+        {children}
       </button>
     </>
   );

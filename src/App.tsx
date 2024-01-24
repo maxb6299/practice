@@ -8,7 +8,7 @@ function App() {
 
   return (
     <>
-      <Button buttonText="Button Text String" />
+      <Button>Button Text</Button>
 
       {/* <Alert>
         <h1>Alert</h1>
