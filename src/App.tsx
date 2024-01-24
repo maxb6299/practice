@@ -1,8 +1,14 @@
-import HelloWorld from './components/HelloWorld';
-import ListGroup from './components/ListGroup';
+import HelloWorld from "./components/HelloWorld";
+import ListGroup from "./components/ListGroup";
 
 function App() {
-  return <div><ListGroup /></div>
+  let items = ["New York", "Miami", "Chicago", "Los Angeles", "Houston"];
+
+  return (
+    <>
+      <ListGroup items={items} heading="Cities" />
+    </>
+  );
 }
 
 export default App;
