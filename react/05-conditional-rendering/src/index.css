@@ -1,0 +1,16 @@
+.welcome-message, 
+.login-message {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2.5em;
+  color: white;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 0px;
+}
+
+.welcome-message {
+  background-color: green;
+}
+.login-message {
+  background-color: red;
+}
