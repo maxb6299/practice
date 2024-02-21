@@ -1,7 +1,11 @@
 function UserGreeting(props) {
+    const welcomeMessage = <h2 className='welcome-message'>Welcome {props.username}</h2>
+
+    const loginMessage = <h2 className='login-message'>Please log in to continue</h2> 
+    
     return(
-        props.isLoggedIn ? <h2 className='welcome-message'>Welcome {props.username}</h2>
-                         : <h2 className='login-message'>Please log in to continue</h2> 
+        props.isLoggedIn ? welcomeMessage
+                         : loginMessage
     )
 }
 
