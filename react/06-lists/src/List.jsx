@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types'
+
 function List(props) {
     props.array.sort((a,b) => a.calories - b.calories);
 
@@ -11,6 +13,20 @@ function List(props) {
             <ol>{listDiv}</ol>
         </>
     )
+}
+
+List.propTypes = {
+    category: PropTypes.string,
+    array: PropTypes.arrayOf(PropTypes.shape( {
+        id: PropTypes.number,
+        name: PropTypes.string, 
+        calories: PropTypes.number
+    }))
+}
+
+List.defaultProps = {
+    category: 'Category',
+    array: []
 }
 
 export default List
