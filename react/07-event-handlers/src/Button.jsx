@@ -1,15 +1,11 @@
 function Button() {
-    let count = 0;
-    let name = 'User';
-    
-    const handleClick = (username) => {
-        count++;
-        console.log(`${username} has clicked me ${count} times`);
+    const handleClick = (e) => {
+        e.target.textContent = "Clicked!"
     }
     
     return(
         <>
-            <button onClick={() => handleClick(name)}>Click me</button>
+            <button onClick={(e) => handleClick(e)}>Click me</button>
         </>
     )
 }
